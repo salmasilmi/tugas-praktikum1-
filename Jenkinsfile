@@ -3,6 +3,7 @@ pipeline {
   environment {
     IMAGE_NAME = 'herfianisalma/simple-app'
     REGISTRY_CREDENTIALS = 'dockerhub-credentials'
+     PATH = "C:\\Users\\ASUS\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin;${env.PATH}"
   }
   stages {
     stage('Checkout SCM') { 
